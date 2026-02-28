@@ -7384,19 +7384,6 @@ export interface TClusters {
         };
         commandResponses: never;
     };
-    manuSpecificOsram: {
-        attributes: never;
-        commands: {
-            /** ID=0x01 */
-            saveStartupParams: Record<string, never>;
-            /** ID=0x02 */
-            resetStartupParams: Record<string, never>;
-        };
-        commandResponses: {
-            /** ID=0x00 */
-            saveStartupParamsRsp: Record<string, never>;
-        };
-    };
     manuSpecificPhilips: {
         attributes: {
             /** ID=0x0031 | type=BITMAP16 | write=true */
